@@ -16,7 +16,7 @@ def get_program_output():
     return output
 
 def check_output(output):
-    w_count, y_count, z_count = 0, 0, 0
+    w_count, x_count, y_count, z_count = 0, 0, 0, 0
     w_expected, y_expected = True, True
 
     try:
@@ -31,6 +31,8 @@ def check_output(output):
 
             if c == 'W':
                 w_count += 1
+            elif c == 'X':
+                x_count += 1
             elif c == 'y':
                 y_count += 1
             elif c == 'z':
