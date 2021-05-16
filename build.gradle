@@ -1,0 +1,9 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'semaphores.Run'
+
+jar {
+    archiveBaseName = 'semaphores'
+    archiveVersion =  '1.0.0'
+}
