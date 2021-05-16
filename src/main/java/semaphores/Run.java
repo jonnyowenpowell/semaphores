@@ -22,7 +22,6 @@ public class Run {
         // limit of W must be twice that of y and z.
         // This, combined with pairs of (W, X) and (y, z) printers
         // having the same limits is sufficient to prevent deadlock.
-
         var wPrinter = new CharacterPrinter('W',
             new Semaphore[] { wSemaphore },
             new Semaphore[] { xSemaphore, yzSemaphore }, 100);

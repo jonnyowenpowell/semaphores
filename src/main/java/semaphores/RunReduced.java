@@ -10,7 +10,6 @@ public class RunReduced {
 
         // Initialise CharacterPrinter Runnables
         // These W and X printers have a limit of 100 each.
-
         var wPrinter = new CharacterPrinter('W',
             new Semaphore[] { wSemaphore },
             new Semaphore[] { xSemaphore }, 100);
