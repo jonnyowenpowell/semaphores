@@ -3,6 +3,10 @@ apply plugin: 'application'
 
 mainClassName = 'semaphores.Run'
 
+task docs(type: Javadoc) {
+  source = sourceSets.main.allJava
+}
+
 jar {
     archiveBaseName = 'semaphores'
     archiveVersion =  '1.0.0'
