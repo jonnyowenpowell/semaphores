@@ -16,4 +16,9 @@ public class BinarySemaphore extends Semaphore {
         super(available ? 1 : 0);
     }
 
+    public synchronized void V() {
+        value = 1;
+        notify();
+    }
+
 }
